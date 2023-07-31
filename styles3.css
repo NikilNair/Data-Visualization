@@ -1,0 +1,110 @@
+/* Reset some default styles */
+body, h1 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the header container */
+  .header {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Style the title */
+  h1 {
+    font-size: 32px;
+    color: #333;
+  }
+
+  .content {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Style the paragraphs within the content */
+  .content p {
+    font-size: 16px;
+    color: #444;
+    margin: 10px 0;
+  }
+
+  .centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+    margin-top: -200px; /* Adjust the margin-top as needed */
+    margin-bottom: -500px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensures the container takes the full viewport height */
+    margin-top: 40px; /* Adjust the margin-top as needed */
+  }
+
+  #myButtonBack {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+  }
+  
+  /* Style the button when hovered */
+  #myButtonBack:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the button when pressed */
+  #myButtonBack:active {
+    background-color: #3e8e41;
+  }
+
+  #myButtonHome {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+  }
+  
+  /* Style the button when hovered */
+  #myButtonHome:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the button when pressed */
+  #myButtonHome:active {
+    background-color: #3e8e41;
+  }
+
+  .custom-select {
+    display: block;
+    width: 180px;
+    padding: 10px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-select:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  

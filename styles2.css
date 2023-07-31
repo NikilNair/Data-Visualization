@@ -1,0 +1,92 @@
+/* Reset some default styles */
+body, h1 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the header container */
+  .header {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Style the title */
+  h1 {
+    font-size: 32px;
+    color: #333;
+  }
+
+  .content {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Style the paragraphs within the content */
+  .content p {
+    font-size: 16px;
+    color: #444;
+    margin: 10px 0;
+  }
+
+  .centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+    margin-top: -200px; /* Adjust the margin-top as needed */
+    margin-bottom: -500px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensures the container takes the full viewport height */
+    margin-top: 40px; /* Adjust the margin-top as needed */
+  }
+
+  #myButtonBack {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+  }
+  
+  /* Style the button when hovered */
+  #myButtonBack:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the button when pressed */
+  #myButtonBack:active {
+    background-color: #3e8e41;
+  }
+
+  #myButtonNext {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+  }
+  
+  /* Style the button when hovered */
+  #myButtonNext:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the button when pressed */
+  #myButtonNext:active {
+    background-color: #3e8e41;
+  }

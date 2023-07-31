@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizer 3 Page</title>
+    <link rel="stylesheet" href="styles3.css">
+    <style>
+        .bar {
+            fill: steelblue;
+        }
+
+        .tooltip {
+            position: absolute;
+            display: block;
+            background-color: #333;
+            color: #fff;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+        }
+
+        .axis-title {
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Average Home Price Per Month in 2022</h1>
+    </div>
+    <div class="content">
+        <p>This is an open visualizer and you may select the sector you wish to see yearly home average price statistics
+            for.</p>
+        <p>This visualizer can show us a number of insights regarding why certain areas are priced higher than others,
+            and how trends have developed.</p>
+    </div>
+
+
+
+    <div class="centered-content">
+        <div id="chartContainer"></div>
+        <select id="dataSelector" class="custom-select">
+            <option value="Sector A">Sector A</option>
+            <option value="Sector B">Sector B</option>
+            <option value="Sector C">Sector C</option>
+            <option value="Sector D">Sector D</option>
+            <option value="Sector E">Sector E</option>
+        </select>
+    </div>
+    <svg width="400" height="300"></svg>
+
+
+    <div class="content">
+        <p>While most home prices tend to trend up we can see that Sector A a community that was recently developed in
+            December of 2021 is depreciating over the year. This could be due to a lower number of home sales and thus a
+            less active region.</p>
+        <p>Another more prominant anomaly is Sector E. We can see that as an area with higher crime rates, the price
+            fluxuates heavily month to month which is why we see people buy more when the price is lower.</p>
+        <p> The
+            socio-economic conditions of this area may also play a role in the heavy price flux.</p>
+    </div>
+    <div class="button-container">
+        <button id="myButtonBack">Back</button>
+        <button id="myButtonHome">Home</button>
+    </div>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="script3.js">
+
+    </script>
+</body>
+
+</html>

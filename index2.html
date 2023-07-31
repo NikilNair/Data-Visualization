@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizer 2 Page</title>
+    <link rel="stylesheet" href="styles2.css">
+    <style>
+        .bar {
+            fill: steelblue;
+        }
+
+        .tooltip {
+            position: absolute;
+            display: block;
+            background-color: #333;
+            color: #fff;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+        }
+
+        .axis-title {
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Homes Sold in Hillsboro in 2022</h1>
+    </div>
+    <div class="content">
+        <p>The chart below showcases the number of homes sold within each sector in Hillsboro in 2022.</p>
+        <p>This chart showcases why home prices are higher in some regions and lower in others - simply due to more
+            sales.</p>
+    </div>
+    <div class="centered-content">
+        <div id="chartContainer"></div>
+    </div>
+    <svg width="400" height="300"></svg>
+
+    <div class="content">
+        <p>It is interesting to see that even though Sector E has a higher crime rate than the other sectors the number
+            of home sales are higher than most.</p>
+        <p>The next visualization will showcase perhaps why this is, we can also see that highly popular areas like
+            Sector C get more sales even with a higher home price.</p>
+    </div>
+    <div class="button-container">
+        <button id="myButtonBack">Back</button>
+        <button id="myButtonNext">Next</button>
+    </div>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script>
+    <script src="script2.js">
+
+    </script>
+</body>
+
+</html>

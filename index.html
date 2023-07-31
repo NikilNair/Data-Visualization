@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .bar {
+            fill: steelblue;
+        }
+
+        .tooltip {
+            position: absolute;
+            display: block;
+            background-color: #333;
+            color: #fff;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+        }
+
+        .axis-title {
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Average Home Prices within Neighborhood Sectors in Hillsboro in 2022</h1>
+    </div>
+    <div class="content">
+        <p>Within Washington Count lies Hillsboro, the largest city and county seat with a population exceeding 100,000.
+        </p>
+        <p>In this visualization we will be taking a look at house prices within the Hillsboro area and showcasing the
+            disparity within different Neighborhood sectors in the area.</p>
+        <p>The Hillsboro area has five major Neighborhoods sectored from A - E. These sectors are located within varying
+            socio-economic and cultural regions.</p>
+        <p>The chart below showcases the average home price within each of the sectors in year 2022.</p>
+    </div>
+    <div class="centered-content">
+        <div id="chartContainer"></div>
+    </div>
+    <svg width="400" height="300"></svg>
+
+    <div class="content">
+        <p>This chart showcases some interesting details with regards to the different Neighborhood sectors. We can see
+            that certain sectors like C and other sectors like A have varying price ranges.</p>
+        <p>These price ranges are due to a variety of factos but most predominantly it has to do with region. Sector A
+            is a recently built Neighborhood wheras sector D has been around for a while </p>
+        <p>and is recently
+            becoming
+            renovated and modernized, so it isn't too much of a surprise that they share similar prices. Click Next to
+            see how many homes were purchased in each area in 2022.</p>
+    </div>
+    <div class="button-container">
+        <button id="myButton">Next</button>
+    </div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script>
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
